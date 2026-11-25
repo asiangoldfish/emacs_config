@@ -6,7 +6,14 @@
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (load custom-file :no-error-if-file-is-missing)
 
-;; Add third-party package manager
+;;; Global settings
+(global-display-line-numbers-mode)
+
+;;; Global keybinds
+(global-set-key (kbd "C-z") 'undo-only)
+(global-set-key (kbd "C-S-z") 'undo-redo)
+
+;;; Add third-party package manager
 (require 'package)
 (package-initialize)
 
