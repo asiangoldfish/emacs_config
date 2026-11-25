@@ -297,3 +297,8 @@ The DWIN behaviour of this command is as follows:
   (add-hook 'server-after-make-frame-hook #'dashboard-refresh-buffer)
 
   (dashboard-setup-startup-hook))
+
+
+;;; Magit, the apparently best Git client
+(use-package magit
+  :ensure t)
